@@ -1,5 +1,7 @@
 package com.ecommerce.catalog.service;
 
+import com.ecommerce.catalog.dto.ProductResponse;
+
 public interface ProductService {
-    // TODO: declarar operaciones de consulta y gestión de productos.
+    ProductResponse getByProductId(String productId);
 }
