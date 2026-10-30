@@ -1,5 +1,15 @@
 package com.ecommerce.catalog.dto;
 
-public class ProductResponse {
-    // TODO: definir el contrato JSON de respuesta del producto.
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.math.BigDecimal;
+
+public record ProductResponse(
+        @JsonProperty("product_id")
+        String productId,
+        String name,
+        String description,
+        String category,
+        @JsonProperty("price_usd")
+        BigDecimal priceUsd) {
 }
