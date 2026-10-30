@@ -1,0 +1,7 @@
+com\ecommerce\stock\repository\InventoryRepository.class
+com\ecommerce\stock\service\InventoryServiceImpl.class
+com\ecommerce\stock\StockServiceApplication.class
+com\ecommerce\stock\model\Inventory.class
+com\ecommerce\stock\dto\InventoryResponse.class
+com\ecommerce\stock\controller\InventoryController.class
+com\ecommerce\stock\service\InventoryService.class
