@@ -1,7 +1,0 @@
-com\ecommerce\catalog\dto\ProductResponse.class
-com\ecommerce\catalog\service\ProductService.class
-com\ecommerce\catalog\repository\ProductRepository.class
-com\ecommerce\catalog\CatalogServiceApplication.class
-com\ecommerce\catalog\service\ProductServiceImpl.class
-com\ecommerce\catalog\controller\ProductController.class
-com\ecommerce\catalog\model\Product.class
