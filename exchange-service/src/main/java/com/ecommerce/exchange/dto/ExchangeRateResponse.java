@@ -1,5 +1,16 @@
 package com.ecommerce.exchange.dto;
 
-public class ExchangeRateResponse {
-    // TODO: definir el contrato JSON de la tasa de cambio.
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+public record ExchangeRateResponse(
+        @JsonProperty("base_currency")
+        String baseCurrency,
+        @JsonProperty("target_currency")
+        String targetCurrency,
+        BigDecimal rate,
+        LocalDate date,
+        String source) {
 }

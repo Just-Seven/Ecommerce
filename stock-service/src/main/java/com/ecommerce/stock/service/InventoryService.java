@@ -1,5 +1,7 @@
 package com.ecommerce.stock.service;
 
+import com.ecommerce.stock.dto.InventoryResponse;
+
 public interface InventoryService {
-    // TODO: declarar operaciones de consulta de stock.
+    InventoryResponse getByProductId(String productId);
 }

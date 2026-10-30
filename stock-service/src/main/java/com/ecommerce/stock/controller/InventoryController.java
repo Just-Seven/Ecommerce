@@ -1,10 +1,24 @@
 package com.ecommerce.stock.controller;
 
+import com.ecommerce.stock.dto.InventoryResponse;
+import com.ecommerce.stock.service.InventoryService;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/microservices/inventory")
+@RequestMapping("/microservices/stock")
 public class InventoryController {
-    // TODO: declarar aquí el endpoint de consulta de inventario.
+
+    private final InventoryService inventoryService;
+
+    public InventoryController(InventoryService inventoryService) {
+        this.inventoryService = inventoryService;
+    }
+
+    @GetMapping("/{productId}")
+    public InventoryResponse getInventory(@PathVariable String productId) {
+        return inventoryService.getByProductId(productId);
+    }
 }
