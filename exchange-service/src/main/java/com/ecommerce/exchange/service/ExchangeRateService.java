@@ -1,5 +1,7 @@
 package com.ecommerce.exchange.service;
 
+import com.ecommerce.exchange.dto.ExchangeRateResponse;
+
 public interface ExchangeRateService {
-    // TODO: declarar operaciones para obtener tasas de conversión.
+    ExchangeRateResponse getLatestRate(String baseCurrency, String targetCurrency);
 }
